@@ -23,11 +23,4 @@ function WorkPage() {
   );
 }
 
-export default function WorkPage() {
-  return (
-    <div>
-      <h2>{work.company}</h2>
-      <h3>{work.hours}</h3>
-    </div>
-  );
-};
+export default WorkPage;
