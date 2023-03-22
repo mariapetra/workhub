@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { allWork } from "../data";
 import WorkCard from "../components/WorkCard/WorkCard";
 import "../App.css"
 
@@ -17,10 +16,14 @@ export default function HomePage() {
   }, []);
 
   return (
-    <div id="work-list">
-      {workList.map((workData, key) => {
-        return <WorkCard key={key} workData={workData} />;
-      })}
-    </div>
+    <>
+      <h1>WorkHub</h1>
+      <div id="work-list">
+        {workList.map((workData, key) => {
+          return <WorkCard key={key} workData={workData} />;
+        })}
+      </div>
+    </>
+
   );
 }
