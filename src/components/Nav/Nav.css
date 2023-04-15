@@ -1,0 +1,46 @@
+.navBar {
+  padding: 40px;
+}
+
+.navBar button {
+  background: transparent;
+  border: none;
+  display: flex;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.menuNav {
+  overflow-y: scroll;
+  list-style: none;
+  position: fixed;
+  top: 0;
+  background-color: var(--secondary);
+  left: 0;
+  bottom: 0;
+  width: 0;
+  overflow: hidden;
+  max-width: 15rem;
+}
+
+.menuNav.showMenu {
+  padding-top: 2rem;
+  width: 100vh;
+}
+
+.menuNav:Link:first-child {
+  padding-top: 10rem;
+}
+
+.menuNav a {
+  display: block;
+  padding: 10px 50px;
+  margin: 10px;
+  text-decoration: none;
+  color: var(--s-text);
+  text-transform: uppercase;
+  font-weight: bold;
+}

@@ -1,10 +1,21 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Outlet } from "react-router-dom";
+
+//components
 import Nav from "./components/Nav/Nav";
-import HomePage from "./pages/HomePage";
-import WorkPage from "./pages/WorkPage";
-import LoginPage from "./pages/LoginPage";
+
+//pages
+import Home from "./pages/Home";
+import Work from "./pages/Work";
+import Login from "./pages/Login";
+import About from "./pages/About";
+import Help from "./pages/Help";
+import Contact from "./pages/Contact";
+
+//styles
 import "./App.css";
+import "./index.css";
+
 
 const HeaderLayout = () => (
   <div>
@@ -19,15 +30,27 @@ const router = createBrowserRouter([
     children:
       [{
         path: "/",
-        element: <HomePage />,
+        element: <Home />,
       },
       {
         path: "/login",
-        element: <LoginPage />,
+        element: <Login />,
       },
       {
         path: "/work/:id",
-        element: <WorkPage />,
+        element: <Work />,
+      },
+      {
+        path: "/about",
+        element: <About />,
+      },
+      {
+        path: "/help",
+        element: <Help />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
       },
       ],
   },]);
