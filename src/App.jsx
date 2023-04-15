@@ -3,7 +3,6 @@ import { Outlet } from "react-router-dom";
 
 //components
 import Nav from "./components/Nav/Nav";
-
 //pages
 import Home from "./pages/Home";
 import Work from "./pages/Work";

@@ -27,15 +27,17 @@ function Nav() {
 
       <button onClick={handleToggle}>
         <h1 style={{
-          color: "var(--p-dark)",
-          padding: "5px 10px",
+          color: "var(--secondary)",
+          padding: "2.5px 10px",
+          backgroundColor: "var(--primary)",
         }}>Menu</h1>
         {navbarOpen ? (
           <MdClose
             style={{
-              color: "var(--primary)",
+              color: "var(--secondary)",
               width: "30px",
               height: "30px",
+              backgroundColor: "var(--primary)",
             }} />
         ) : (
           <FiMenu
@@ -43,6 +45,7 @@ function Nav() {
               color: "var(--secondary)",
               width: "30px",
               height: "30px",
+              backgroundColor: "var(--primary)",
             }} />
         )}
       </button>

@@ -1,5 +1,7 @@
 .navBar {
-  padding: 40px;
+  padding: 30px;
+  z-index: 9999;
+  position: fixed;
 }
 
 .navBar button {
@@ -37,10 +39,10 @@
 
 .menuNav a {
   display: block;
-  padding: 10px 50px;
+  padding: 10px 30px;
   margin: 10px;
   text-decoration: none;
   color: var(--s-text);
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-weight: bold;
 }
