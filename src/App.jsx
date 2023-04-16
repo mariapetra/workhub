@@ -10,6 +10,11 @@ import Login from "./pages/Login";
 import About from "./pages/About";
 import Help from "./pages/Help";
 import Contact from "./pages/Contact";
+import Calendar from "./pages/Calendar";
+import Resume from "./pages/Resume";
+import Super from "./pages/Super";
+import Tax from "./pages/Tax";
+import Profile from "./pages/Profile";
 
 //styles
 import "./App.css";
@@ -50,6 +55,26 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />,
+      },
+      {
+        path: "/calendar",
+        element: <Calendar />,
+      },
+      {
+        path: "/profile",
+        element: <Profile />,
+      },
+      {
+        path: "/resume",
+        element: <Resume />,
+      },
+      {
+        path: "/super",
+        element: <Super />,
+      },
+      {
+        path: "/tax",
+        element: <Tax />,
       },
       ],
   },]);

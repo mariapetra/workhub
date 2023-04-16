@@ -1,10 +1,8 @@
 // import { useState, useEffect } from "react";
-import "../index.css"
-import "../components/Hero/Hero.css";
-
+import "../index.css";
 
 import Hero from "../components/Hero/Hero";
-import HomeHero from "../images/Hero/undraw_working_from_anywhere.svg"
+import HomeHero from "../images/Hero/undraw_working_from_anywhere.svg";
 
 export default function HomePage() {
 
@@ -14,7 +12,6 @@ export default function HomePage() {
         title="WorkHubTest"
         text="testmytext here"
       />
-
       <h1>WorkHub</h1>
       <div>
         Everything you need
